@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav K. | Music Producer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.9)), url('http://static.photos/studio/1200x630/15');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-teal {
+            color: #5eead4;
+        }
+        .bg-accent-teal {
+            background-color: #5eead4;
+        }
+        .border-accent-teal {
+            border-color: #5eead4;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(94, 234, 212, 0.2);
+        }
+        .audio-player {
+            background: rgba(30, 30, 30, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-semibold accent-teal">Regal Arts</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium hover:text-teal-300 transition">Home</a>
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium hover:text-teal-300 transition">About</a>
+                        <a href="#work" class="px-3 py-2 rounded-md text-sm font-medium hover:text-teal-300 transition">Work</a>
+                        <a href="#why" class="px-3 py-2 rounded-md text-sm font-medium hover:text-teal-300 transition">Why Me</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md hover:text-teal-300 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden fixed inset-0 z-40 bg-gray-900/95 backdrop-blur-sm flex items-center justify-center">
+        <div class="text-center">
+            <button class="absolute top-4 right-4 p-2 rounded-md hover:text-teal-300">
+                <i data-feather="x"></i>
+            </button>
+            <div class="space-y-8">
+                <a href="#home" class="block text-2xl font-medium hover:text-teal-300 transition">Home</a>
+                <a href="#about" class="block text-2xl font-medium hover:text-teal-300 transition">About</a>
+                <a href="#work" class="block text-2xl font-medium hover:text-teal-300 transition">Work</a>
+                <a href="#why" class="block text-2xl font-medium hover:text-teal-300 transition">Why Me</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center" data-aos="fade-up">
+            <div class="mb-8 flex justify-center">
+                <img src="ab67616d00001e02d4e6bdba456791c128e67f2d.jpg" alt="Utsav K." class="rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-accent-teal">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6" style="font-weight: 700;">Utsav K.</h1>
+            <h2 class="text-xl md:text-2xl mb-8 accent-teal font-medium" style="font-weight: 600;">Sound Designer & Music Producer</h2>
+            <p class="max-w-2xl mx-auto text-gray-300 mb-12">Crafting immersive audio experiences while studying the art of music production</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#work" class="px-8 py-3 bg-accent-teal text-gray-900 font-medium rounded-full hover:bg-teal-400 transition">My Work</a>
+                <a href="#about" class="px-8 py-3 border border-accent-teal text-accent-teal font-medium rounded-full hover:bg-gray-800 transition">About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-6" style="font-weight: 600;">About Me</h2>
+                    <p class="text-gray-300 mb-4">I'm a first-year music production student with a passion for creating unique soundscapes that blend electronic elements with organic textures.</p>
+                    <p class="text-gray-300 mb-4">My journey began with experimenting on GarageBand in high school, which evolved into a deep fascination with sound design and audio engineering.</p>
+                    <p class="text-gray-300">Currently studying at Berklee College of Music, I'm immersing myself in both the technical and creative aspects of music production while developing my own signature style.</p>
+                </div>
+                <div class="order-1 md:order-2" data-aos="fade-left">
+                    <img src="ab67616d00001e02d4e6bdba456791c128e67f2d.jpg" alt="Alex Carter in studio" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up" style="font-weight: 600;">Latest Releases</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-700 rounded-lg overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-gray-600 flex items-center justify-center ">
+                        <img src="hqdefault.avif" alt="" class="w-full h-full object-cover">
+                        <!-- <i data-feather="music" class="w-16 h-16 text-gray-400"></i> -->
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" style="font-weight: 500;">Hawaon Mein Pyaar</h3>
+                        <p class="text-gray-300 mb-4">Official Release</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="https://open.spotify.com/track/0fV1jRyTbv9viAdUMd2nly?si=53dfe2f64cea4062" target="_blank" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center text-sm transition">
+                                <i data-feather="music" class="w-4 h-4 mr-2"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/gJ1cbkdTDGg?si=SFLk8ChvTTKZCDUU" target="_blank" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center text-sm transition">
+                                <i data-feather="youtube" class="w-4 h-4 mr-2"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <!-- <div class="project-card bg-gray-700 rounded-lg overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-gray-600 flex items-center justify-center">
+                        <i data-feather="headphones" class="w-16 h-16 text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" style="font-weight: 500;">Urban Echoes</h3>
+                        <p class="text-gray-300 mb-4">Experimental beat tape featuring field recordings</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="https://open.spotify.com/track/example2" target="_blank" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center text-sm transition">
+                                <i data-feather="music" class="w-4 h-4 mr-2"></i> Spotify
+                            </a>
+                            <a href="https://youtube.com/watch/example2" target="_blank" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center text-sm transition">
+                                <i data-feather="youtube" class="w-4 h-4 mr-2"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Project 3 -->
+                <!-- <div class="project-card bg-gray-700 rounded-lg overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-gray-600 flex items-center justify-center">
+                        <i data-feather="mic" class="w-16 h-16 text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" style="font-weight: 500;">Midnight Sessions</h3>
+                        <p class="text-gray-300 mb-4">Collaborative project with vocalist Emma R.</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="https://open.spotify.com/track/example3" target="_blank" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center text-sm transition">
+                                <i data-feather="music" class="w-4 h-4 mr-2"></i> Spotify
+                            </a>
+                            <a href="https://youtube.com/watch/example3" target="_blank" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center text-sm transition">
+                                <i data-feather="youtube" class="w-4 h-4 mr-2"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section id="why" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up" style="font-weight: 600;">My Approach</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-accent-teal rounded-full flex items-center justify-center mb-4 text-gray-900">
+                        <i data-feather="layers"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" style="font-weight: 500;">Layered Sound Design</h3>
+                    <p class="text-gray-300">I build tracks from the ground up, carefully crafting each layer to create rich, immersive audio experiences.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-accent-teal rounded-full flex items-center justify-center mb-4 text-gray-900">
+                        <i data-feather="trending-up"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" style="font-weight: 500;">Continuous Learning</h3>
+                    <p class="text-gray-300">As a student, I'm constantly absorbing new techniques and technologies to refine my craft.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-accent-teal rounded-full flex items-center justify-center mb-4 text-gray-900">
+                        <i data-feather="heart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" style="font-weight: 500;">Emotional Resonance</h3>
+                    <p class="text-gray-300">I believe music should move people. Every project is approached with emotional authenticity.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-6" style="font-weight: 600;">Future Vision</h3>
+                <p class="text-gray-300">I'm developing a signature sound that bridges electronic production with organic instrumentation, aiming to create music that feels both futuristic and human. My goal is to contribute fresh perspectives to film scoring, game audio, and experimental music while continuing to evolve as an artist.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-semibold accent-teal">Utsav K.</span>
+                    <p class="text-gray-400 mt-2">Music Producer & Sound Designer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.instagram.com/regal.arts_?utm_source=ig_web_button_share_sheet&igsh=eGlobnlseDBwbGZu" class="text-gray-400 hover:text-accent-teal transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <!-- <a href="#" class="text-gray-400 hover:text-accent-teal transition">
+                        <i data-feather="twitter"></i> -->
+                    </a>
+                    <a href="https://www.youtube.com/@utsavkumarsongs/featured" class="text-gray-400 hover:text-accent-teal transition">
+                        <i data-feather="youtube"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent-teal transition">
+                        <i data-feather="soundcloud"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>© 2025 Regal Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileMenuClose = mobileMenu.querySelector('button');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>feather.replace();</script>
+</body>
+</html>
